@@ -1,0 +1,74 @@
+html, body{
+	height: 100%;
+}
+.main{
+  background-color: #d0d0d0;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.header{
+  background-color: #4a76a8;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header span, a{
+  font-size: 30px;
+  color: #ffffff;
+}
+.login{
+  float: right;
+  padding-right: 20px;
+  color: #F5F4F6 !important;
+  border-color:#1D2837 !important;
+  background-color: #1D2837 !important;
+}
+.osnov{
+  margin-top: 30px;
+  background-color: #ffffff;
+	padding: 10px;
+	border-radius: 10px;
+  min-height: 600px;
+  height: 100%;
+  text-align: center;
+}
+.osnov span{
+  font-size: 50px;
+  color: #000000;
+}
+.osnov h1{
+  font-size: 50px;
+}
+.osnov a{
+  font-size: 30px;
+  float: left;
+  text-decoration: none;
+  color: #4f4f50;
+}
+.osnov a:hover{
+  text-decoration: none;
+  color: #EF5B65;
+}
+.block{
+  background-color: #d9dadc;
+  margin: 10px 30px;
+  padding: 10px;
+	border-radius: 8px;
+  min-height: 200px;
+  text-align: left !important;
+}
+.block:hover{
+  background-color: #d4d5d6;
+}
+.block span{
+  font-size: 30px
+}
+.photo{
+  width: 90%;
+  height: 90%;
+}
+.photo img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
