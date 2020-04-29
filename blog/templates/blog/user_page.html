@@ -14,8 +14,8 @@
 </head>
 <body class="main">
 <nav class="header navbar">
-    <a href="index.html"><span class="navbar-brand navbar-text">ProjectB</span></a>
-    <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login.html">Вход</a>
+      <a href="{% url 'index' %}"><span class="navbar-brand navbar-text">ProjectB</span></a>
+      <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login">Вход</a>
 </nav>
 <div class="container">
     <div class="row profile">
@@ -42,11 +42,11 @@
     <div class="portfolio">
         <div class="row justify-content-end">
             <div class="col-3">
-                <a type="button" class="btn btn-info btn-lg navbar-text" href="add_adward.html">Добавить достижение</a>
+                <a type="button" class="btn btn-info btn-lg navbar-text" href="add_adward">Добавить достижение</a>
             </div>
         </div>
         <div class="groups">
-            <a href="group.html">
+            <a href="group">
                 <div class="group">
                     <span>Информационные технологии</span>
                     <div class="number">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </a>
-            <a href="group.html">
+            <a href="group">
                 <div class="group">
                     <span>Математика</span>
                     <div class="number">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </a>
-            <a href="group.html">
+            <a href="group">
                 <div class="group">
                     <span>Хакатоны</span>
                     <div class="number">

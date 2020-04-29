@@ -13,16 +13,16 @@
 </head>
 <body class="main">
 <nav class="header navbar">
-    <a href="index.html"><span class="navbar-brand navbar-text">ProjectB</span></a>
-    <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login.html">Вход</a>
+      <a href="{% url 'index' %}"><span class="navbar-brand navbar-text">ProjectB</span></a>
+    <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login">Вход</a>
 </nav>
 
 <div class="container">
     <div class="osnov">
-        <a href="#" onclick="history.back();">Назад</a>
+        <a href="{% url 'index' %}">Назад</a>
         <h1>Результаты поиска:</h1>
 
-        <a href="user_page.html" class="ba">
+        <a href="user_page" class="ba">
             <div class="block">
                 <div class="row">
                     <div class="col-md-7">
@@ -40,7 +40,7 @@
             </div>
         </a>
 
-        <a href="user_page.html" class="ba">
+        <a href="user_page" class="ba">
             <div class="block">
                 <div class="row">
                     <div class="col-md-7">

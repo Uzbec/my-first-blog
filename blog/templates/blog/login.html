@@ -13,8 +13,8 @@
   </head>
   <body class="main">
     <nav class="header navbar">
-      <a href="index.html"><span class="navbar-brand navbar-text">ProjectB</span></a>
-      <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login.html">Вход</a>
+      <a href="{% url 'index' %}"><span class="navbar-brand navbar-text">ProjectB</span></a>
+      <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login">Вход</a>
     </nav>
 
       <div class="container">
@@ -31,7 +31,7 @@
             </div>
             <button type="submit" class="btn btn-primary btn-lg">Войти</button>
           </form>
-          <a href="registration.html">Еще нет аккаунта, тогда зарегистрируйся</a>
+          <a href="registration">Еще нет аккаунта, тогда зарегистрируйся</a>
         </div>
       </div>
 
