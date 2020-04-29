@@ -1,10 +1,16 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.715">
     <title>ProjectB</title>
     <link rel="stylesheet" type="text/css" href="registration.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="{% static 'css/registration.css' %}" rel="stylesheet" type="text/css">  </head>
   </head>
   <body class="main">
     <nav class="header navbar">
@@ -30,15 +36,19 @@
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Подтвердите Пароль</label>
-            <input type="password" class="form-control" id="InputPassword1" placeholder="Введите пароль еще раз">
+            <input type="password" class="form-control" id="ConfirmPassword1" placeholder="Введите пароль еще раз">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Город проживания</label>
-            <input type="text" class="form-control" id="InputFIO" placeholder="Введите город">
+            <input type="text" class="form-control" id="InputCity" placeholder="Введите город">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Учебное заведение</label>
+            <input type="text" class="form-control" id="InputEducationalOrganization" placeholder="Введите учебное заведение">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Сферы деятельности:</label>
-            <input type="text" class="form-control" id="InputFIO" placeholder="Введите сферы деятельности: через запятую">
+            <input type="text" class="form-control" id="InputActivity" placeholder="Введите сферы деятельности: через запятую">
           </div>
           <div class="form-group">
             <label for="exampleFormControlFile1">Фото для аватара</label>

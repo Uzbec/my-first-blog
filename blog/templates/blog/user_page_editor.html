@@ -1,10 +1,15 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.715">
     <title>ProjectB</title>
     <link rel="stylesheet" type="text/css" href="user_page_editor.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="{% static 'css/user_page_editor.css' %}" rel="stylesheet" type="text/css">  </head>
   </head>
   <body class="main">
     <nav class="header navbar">
@@ -22,13 +27,15 @@
             </div>
             <div class="col-md-9">
               <div class="info">
-                <span>Vasya</span>
-                <span>Pupkin</span>
+                <span>Горюшкина </span>
+                <span>Татьяна</span>
+                <span>Олеговна</span>
                 <br />
                 <div class="pod-info">
-                  <span>Дата рождения: 01.01.2004</span><br />
+                  <span>Дата рождения: 05.02.2004</span><br />
                   <span>Родной город: Москва</span> <br />
-                  <span>Сферы деятельности: программировние, web-design</span>
+                  <span>Учебное заведение: Школа №1158</span> <br />
+                  <span>Сферы деятельности:  спорт, программирование, физика, математика, химия</span>
                 </div>
               </div>
             </div>

@@ -1,0 +1,75 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.715">
+    <title>ProjectB</title>
+    <link rel="stylesheet" type="text/css" href="result_search.css"/>
+    <link href="{% static 'css/user_page.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body class="main">
+<nav class="header navbar">
+    <a href="index.html"><span class="navbar-brand navbar-text">ProjectB</span></a>
+    <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login.html">Вход</a>
+</nav>
+
+<div class="container">
+    <div class="osnov">
+        <a href="#" onclick="history.back();">Назад</a>
+        <h1>Результаты поиска:</h1>
+
+        <a href="user_page.html" class="ba">
+            <div class="block">
+                <div class="row">
+                    <div class="col-md-7">
+                        <span>Горюшкина Татьяна Олеговна</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span style="color: #505050;">Школа №1158</span>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="photo">
+                            <img src="image/test.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="user_page.html" class="ba">
+            <div class="block">
+                <div class="row">
+                    <div class="col-md-7">
+                        <span>Иван Иванов</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span style="color: #505050;">Школа №1158</span>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="photo">
+                            <img src="image/test1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+</html>
