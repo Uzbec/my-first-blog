@@ -1,0 +1,60 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.715">
+    <title>ProjectB</title>
+    <link rel="stylesheet" type="text/css" href="add_adward.css"/>
+    <link href="{% static 'css/add_adward.css' %}" rel="stylesheet" type="text/css">  </head>
+  </head>
+  <body class="main">
+    <nav class="header navbar">
+      <a href="{% url 'index' %}"><span class="navbar-brand navbar-text">ProjectB</span></a>
+      <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login">Вход</a>
+    </nav>
+
+      <div class="container">
+        <div class="formbox">
+          <form class="formb">
+            <div class="row fr">
+              <div class="col-3">
+                <a href="#" onclick="history.back();">Назад</a>
+              </div>
+              <div class="col-9">
+                <span class="nadp">Добавления сертификата</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="InputName">Название мероприятия</label>
+              <input type="text" class="form-control" id="InputFIO" placeholder="Введите название мероприятия">
+            </div>
+            <div class="form-group">
+              <select class="custom-select custom-select-lg mb-3">
+                <option selected>Выберите категорию</option>
+                <option value="Хакатон">Хакатон</option>
+                <option value="Информационные технологии">Информационные технологии</option>
+                <option value="Математика">Математика</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Фото/скан сертификата</label>
+              <input type="file" class="form-control-file" id="Photo">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Добавить</button> <br />
+            <small>Достижение добавиться после верификация</small>
+          </form>
+        </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
