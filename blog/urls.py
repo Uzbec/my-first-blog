@@ -8,6 +8,8 @@ urlpatterns = [
     path('registration', views.registration, name="registration"),
     path('user_page', views.user_page, name="user_page"),
     path('user_page_editor', views.user_page_editor, name="user_page_editor"),
+    path('result_search', views.result_search, name='result_search'),
+    path('asd', views.asd, name='asd'),
 
 
 ]

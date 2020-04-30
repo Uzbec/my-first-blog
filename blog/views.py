@@ -27,3 +27,11 @@ def user_page(request):
 
 def user_page_editor(request):
     return render(request, "blog/user_page_editor.html")
+
+
+def asd(request):
+    return render(request, "blog/asd.html")
+
+
+def result_search(request):
+    return render(request, "blog/result_search.html")
