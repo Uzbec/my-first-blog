@@ -1,88 +1,61 @@
-{% load static %}
-{% load bootstrap4 %}
-{% bootstrap_css %}
-{% bootstrap_javascript jquery='full' %}
-<!DOCTYPE html>
-<html lang="ru" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.715">
-    <title>ProjectB</title>
-    <link rel="stylesheet" type="text/css" href="user_page.css"/>
-    <link href="{% static 'css/user_page.css' %}" rel="stylesheet" type="text/css">
-</head>
-</head>
-<body class="main">
-<nav class="header navbar">
-      <a href="{% url 'index' %}"><span class="navbar-brand navbar-text">ProjectB</span></a>
-      <a type="button" class="btn btn-primary btn-lg login navbar-text" href="login">Вход</a>
-</nav>
-<div class="container">
-    <div class="row profile">
-        <div class="col-md-3">
-            <div class="photo">
-                <img src="image/test.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-9">
-            <div class="info">
-                <span>Горюшкина </span>
-                <span>Татьяна</span>
-                <span>Олеговна</span>
-                <br/>
-                <div class="pod-info">
-                    <span>Дата рождения: 05.02.2004</span><br/>
-                    <span>Родной город: Москва</span> <br/>
-                    <span>Учебное заведение: Школа №1158</span> <br/>
-                    <span>Сферы деятельности:  спорт, программирование, физика, математика, химия</span>
-                </div>
-            </div>
+{% extends "base.html" %}
+{%block linkcontent%}
+<link href="{% static 'css/user_page.css' %}" rel="stylesheet"
+      type="text/css">{%endblock linkcontent%}
+{%block content%}
+<div class="row profile">
+    <div class="col-md-3">
+        <div class="photo">
+            <img src="image/test.jpg" alt="">
         </div>
     </div>
-    <div class="portfolio">
-        <div class="row justify-content-end">
-            <div class="col-3">
-                <a type="button" class="btn btn-info btn-lg navbar-text" href="add_adward">Добавить достижение</a>
+    <div class="col-md-9">
+        <div class="info">
+            <span>Горюшкина </span>
+            <span>Татьяна</span>
+            <span>Олеговна</span>
+            <br/>
+            <div class="pod-info">
+                <span>Дата рождения: 05.02.2004</span><br/>
+                <span>Родной город: Москва</span> <br/>
+                <span>Учебное заведение: Школа №1158</span> <br/>
+                <span>Сферы деятельности:  спорт, программирование, физика, математика, химия</span>
             </div>
-        </div>
-        <div class="groups">
-            <a href="group">
-                <div class="group">
-                    <span>Информационные технологии</span>
-                    <div class="number">
-                        <span>2</span>
-                    </div>
-                </div>
-            </a>
-            <a href="group">
-                <div class="group">
-                    <span>Математика</span>
-                    <div class="number">
-                        <span>1</span>
-                    </div>
-                </div>
-            </a>
-            <a href="group">
-                <div class="group">
-                    <span>Хакатоны</span>
-                    <div class="number">
-                        <span>4</span>
-                    </div>
-                </div>
-            </a>
         </div>
     </div>
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+<div class="portfolio">
+    <div class="row justify-content-end">
+        <div class="col-3">
+            <a type="button" class="btn btn-info btn-lg navbar-text"
+               href="add_adward">Добавить достижение</a>
+        </div>
+    </div>
+    <div class="groups">
+        <a href="group">
+            <div class="group">
+                <span>Информационные технологии</span>
+                <div class="number">
+                    <span>2</span>
+                </div>
+            </div>
+        </a>
+        <a href="group">
+            <div class="group">
+                <span>Математика</span>
+                <div class="number">
+                    <span>1</span>
+                </div>
+            </div>
+        </a>
+        <a href="group">
+            <div class="group">
+                <span>Хакатоны</span>
+                <div class="number">
+                    <span>4</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+{%endblock content%}
